@@ -50,7 +50,7 @@ Pre-processing of the data before exploratory analysis involved the transformati
 
 ```{r, warning=FALSE,message=FALSE} 
 flights = readr::read_csv(
-  "http://www.maths.usyd.edu.au/u/UG/JM/DATA1001/r/current/projects/2020data/flights.csv"
+  "flights.csv"
 )
 write_csv(flights, "flights.csv")
 flights$Date <- as.Date(paste(flights$Year, flights$Month_num,"01", sep = "-"))
